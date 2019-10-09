@@ -1,0 +1,28 @@
+
+# coding: utf-8
+
+# In[1]:
+
+
+BMI = 0
+height = int (input("請輸入身高(cm)："))
+weight = int (input("請輸入體重(kg)："))
+
+
+# In[2]:
+
+
+BMI = (weight)/((height/100)*(height/100))
+print ("BMI = %f\n"% (BMI))
+
+
+# In[3]:
+
+
+if BMI < 18.5:
+    print("體重過輕")
+if BMI >= 18.5 and BMI < 24:
+    print("體重標準")
+if BMI >= 24:
+    print("體重過重")
+
